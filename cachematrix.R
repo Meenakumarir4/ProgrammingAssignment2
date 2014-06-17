@@ -10,8 +10,10 @@ mdat <- matrix(c(1,2,3, 11,12,13), nrow = 2, ncol = 3, byrow = TRUE,
 }
 
 
-## Write a short comment describing this function
+##  function computes the inverse of the matrix returned by makecachematrix
 
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+cacheSolve <- function(x, mdat) {
+       
+       x <- solve(mdat)
+x
 }
